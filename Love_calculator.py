@@ -17,5 +17,5 @@ if int_concat < 10 or int_concat > 90 :
 elif int_concat < 40 and int_concat > 50 :
     print(f"your score is {int_concat}% , you are all right")
 else :
-    print(f"your score is {int_concat}% , you are all right")    
+    print(f"your score is {int_concat}% , you should break up at this point")    
 
