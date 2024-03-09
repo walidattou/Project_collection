@@ -253,6 +253,6 @@ async def dcodm(ctx, *message: str):
 
 
 
-client.run('MTIwMTU3NzA2NjA2ODQ1MTQ3MA.GCOfoo.5Skxc0G8L68FFIK9sZo19_xyii5UvXzw3CfiCQ')
+client.run(token)
 
 
