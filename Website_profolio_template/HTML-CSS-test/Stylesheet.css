@@ -1,0 +1,307 @@
+
+
+
+*{
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+
+}
+body{
+    background-color: rgba(0, 0, 0, 0.925);
+}
+a:hover{
+    color: rgb(29, 231, 231);
+
+}
+.Navdiv {
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+
+
+}
+
+
+.Home {
+    color: rgb(29, 231, 231);
+    font-size: 30px; /* Adjusting font size */
+    margin-right: 60px;
+    text-shadow: 0px 0px 40px rgb(29, 231, 231);
+    
+}
+
+.About_me{
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+
+
+.Skills{
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+.Contact{
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+
+
+}
+.Home_name{
+    position: absolute;
+    left: 200px;
+    top : 300px;
+    margin-bottom: 30px;
+}
+
+
+.introduction{
+    color: white;
+    position: absolute;
+    top :320px;
+    left: 200px;
+    margin-top: 70px;
+}
+
+.About_items h1{
+    position: relative;
+    top: 400px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+}
+
+.progress {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    text-align: center;
+    text-shadow: 2px 2px 0 #000000;
+    height: 100%;
+    width: 100px;
+    background-color:  rgb(29, 231, 231);;
+    text-align: center;
+    line-height: 20px; /* Should be equal to the height of .progress */
+    color: white;
+    font-weight: bold;
+    transition: width 0.4s ease;
+}
+
+
+.Skills_Label{
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    top: 800px;
+    left: 600px;
+}
+
+
+.Skills_type{
+    margin-top: 30px;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+.Skills_items{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 200px;
+    display: flex;
+    position: relative;
+    width: 1000px;
+    top: 900px;
+    left: 200px;
+    border-color: aqua;
+    border-radius: 50%;
+	justify-content: space-evenly;
+
+}
+
+.Box {
+    
+    background-color:rgb(0, 0, 0);
+    border: 3px solid #76c7c0; /* Cool colored border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    width: 300px; /* Width of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the content */
+    margin-right: 20px;
+}
+
+
+.Skill_disc{
+    margin-top: 40px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+
+.Conatact_me{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top :1350px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.EmailDiv{
+    margin-top: 30px;
+    position: absolute;
+    top :20px;
+    width: 200px;
+   
+}
+.messagediv{
+    margin-top: 80px;
+
+}
+
+.message{
+    background-color:  rgb(0, 0, 0);
+    border: 2px solid rgb(29, 231, 231);
+    border-radius: 2rem;
+    resize: none;
+    margin-bottom: 200px;
+}
+.contact_box{
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-basis: auto;
+    border-radius: 2rem;
+}
+
+.h2contact{
+    font-size: 50px;
+    position: relative;
+    top: 1200px;
+    color: white;
+    text-align: center;
+}
+
+.h2aboutme{
+    font-size: 50px;
+    position: relative;
+    top: 1200px;
+    color: white;
+    text-align: center;
+
+}
+
+.inputN{
+    width: 220px;
+    height: 40px;
+    border: 2px solid rgb(29, 231, 231);
+    border-radius: 2rem;
+    background-color:  rgb(0, 0, 0);
+}
+
+.inputEmail{
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 460px;
+    border: 2px solid rgb(29, 231, 231);
+    border-radius: 2rem;
+    background-color:  rgb(0, 0, 0);
+    position: relative;
+    right: 130px;
+}
+
+footer {
+    background-color: #000000; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Padding inside the footer */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width of the viewport */
+    bottom: 0; /* Stick to the bottom of the viewport */
+}
+
+.Socials{
+    text-align: center;
+    text-decoration: none;
+    margin-right: 50px;
+    color: rgb(29, 231, 231);
+    text-shadow: 0px 0px 10px rgb(29, 231, 231);
+}
+
+
+.submit_button{
+    position: absolute;
+    align-items: center;
+    top: 350px;
+    right: 800px;
+    background-color: rgb(29, 231, 231) ;
+    height: 50px;
+    width: 100px;
+    border: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.submit_button:hover{
+    box-shadow: 0 0 20px rgb(29, 231, 231);
+}
+
+
+.Conatact_me_section{
+    position: relative;
+    top: 500px;
+}
+
+.About_me_div{
+    position: relative;
+    top: 1400px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.About_me_box{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+    border: 5px solid ;
+    border-color: rgb(29, 231, 231);
+    border-radius:20px;
+    background-color:rgb(0, 0, 0) ;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    height: 130px;
+    padding-left: 20px;
+    width: calc(40% - 10px);
+}
