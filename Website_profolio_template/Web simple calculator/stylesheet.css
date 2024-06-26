@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.mainbox {
+    position: relative;
+    align-self: center;
+    height: auto; /* Adjusted to fit content */
+    width: 400px;
+    border: 3px solid black;
+    padding: 20px; /* Added padding for inner spacing */
+    box-sizing: border-box;
+}
+
+.inputbox {
+    height: 40px;
+    width: 100%; /* Full width of the parent */
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px; /* Added padding for better appearance */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.Delete {
+    height: 40px;
+    width: 100%; /* Full width of the parent */
+    margin-bottom: 20px; /* Space below the delete button */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.numbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: space-between;
+}
+
+.button {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px; /* Center text vertically */
+    cursor: pointer;
+}
