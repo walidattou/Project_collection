@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <section>
+        <div class="box">
+            <div class="titlebox">
+                <h1 class="h1el">currency converter</h1>
+            </div>
+            <div class="options">
+                <select class="conv" id="from">
+                    <option value="USD">USD</option>
+                    
+   
+                </select>
+
+                <select class="conv" id="to">
+                    <option value="EUR">EUR</option>
+                    <option value="DZD">DZD</option>
+                    <option value="GBP">GBP</option>
+        
+        
+                </select>
+            </div>
+            <div class="inputbox">
+                <input class="currbox" id ="frombox" type="number" value="0">
+                <input class="currbox" id ="tobox" type="number" value="0">
+
+            </div>
+            <div class="convertbox">
+                <button class="convB" onclick="convert()">Convert</button>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script>
+    
+        let from = document.querySelector("#from");
+        let to = document.querySelector("#to");
+        const Key = '86f34ea0e8f24bebab0dfb2b3f95f625';
+
+        
+
+        function convert() {
+            let url = "https://api.currencyfreaks.com/v2.0/rates/latest?apikey=86f34ea0e8f24bebab0dfb2b3f95f625&symbols=EUR,GBP,USD,DZD";
+            fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                let frombox = document.querySelector("#frombox")
+                let tobox = document.querySelector("#tobox")
+                let toval = to.value
+
+                if (frombox.value === "0"){
+                    frombox.value = data.rates.USD
+                    tobox.value = data.rates[toval]
+
+                }
+                else if (frombox.value !== "0"){
+                    tobox.value = eval(data.rates[toval]*frombox.value)
+                    console.log(tobox.value)
+    
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching JSON:', error); 
+            });
+            
+        }
+    </script>
+</body>
+</html>
